@@ -1,0 +1,13 @@
+{
+  "name": "grunt-usemin2-example",
+  "dependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-cssmin": "~0.9.0",
+    "grunt-contrib-uglify": "~0.4.0",
+    "grunt-usemin": "~2.0.2",
+    "grunt-usemin2": "0.0.6",
+    "load-grunt-tasks": "~0.4.0"
+  }
+}
