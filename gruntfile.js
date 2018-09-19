@@ -74,12 +74,25 @@ module.exports = function(grunt) {
 	    html: {
 	    	src: './index.html', dest: '<%= example.dist %>/index.html'
 	    }
+	  },
+	  processhtml: {
+		options: {
+		  data: {
+			message: 'Hello world!'
+		  }
+		},
+		dist: {
+		  files: {
+			'<%= example.dist %>/index.html': ['index.html']
+		  }
+		}
 	  }
 	});
 
 	grunt.registerTask('default',[
 		'copy:html',
 		'usemin2:release',
+		'processhtml'
     ]);
 }
 
